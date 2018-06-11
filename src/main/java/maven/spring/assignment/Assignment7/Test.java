@@ -8,9 +8,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class Test {
 	 @Autowired
-	  @Qualifier("xml")
+	 //@Qualifier("json")
 	  FileStorage obj;
 	public void test(){
-		obj.save();
+		  Student s= new Student(1,"waseem","class1");
+		obj.save(s);
 	}
 }
